@@ -1,1 +1,3 @@
 # guia-hoteles
+
+README
