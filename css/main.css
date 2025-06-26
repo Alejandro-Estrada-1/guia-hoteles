@@ -23,6 +23,10 @@
   border-radius: 0px;
 }
 
+.tab-content {
+  padding-right: 10px;
+}
+
 .footer {
   background-color: #16e7cb;
   color: white;
