@@ -143,6 +143,56 @@
       </div>
 
       <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+        <div class="accordion" id="accordionTarjetas">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBasica" aria-expanded="true" aria-controls="collapseBasica">
+                  Tarjeta Básica
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseBasica" class="collapse" aria-labelledby="headingOne" data-parent="#accordionTarjetas">
+              <div class="card-body">
+                Puedes reservar en 3 meses sin intereses.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVIP" aria-expanded="true" aria-controls="collapseVIP">
+                  Tarjeta VIP
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseVIP" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTarjetas">
+              <div class="card-body">
+                Puedes reservar en 6 meses sin intereses.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAE" aria-expanded="true" aria-controls="collapseAE">
+                  Tarjeta American Express
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseAE" class="collapse" aria-labelledby="headingThree" data-parent="#accordionTarjetas">
+              <div class="card-body">
+                Puedes reservar en 3 meses sin intereses. O en su lugar en 12 meses sin intereses sin comisiones.
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <br>
+
         <div class="d-flex justify-content-center">
           <div class="card" style="width: 18rem;">
             <div class="card-header" style="background-color: blue; color: white;">Tarjetas aceptadas</div>
@@ -160,7 +210,7 @@
     </div>
 
   </div>
-
+  <br>
   <footer>
     <div class="row">
       <div class="col-sm-4 d-flex flex-column">
