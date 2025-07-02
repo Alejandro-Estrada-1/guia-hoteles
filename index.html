@@ -177,7 +177,7 @@
         <h5 class="card-title">Resort Puebla </h5>
         <h6 class="card-subtitle text-muted">Puebla</h6>
         <p class="card-text">Rodeado de Dinosaurios, montañas y Tlaxcala.</p>
-        <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</a>
+        <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#contacto" id="contactoBtn">Contacto</a>
       </div>
       <div>
         <button type="button" class="btn btn-primary btn-reserva">Ver más</a>
@@ -246,6 +246,23 @@
         $('.carousel').carousel({
           interval: 3000
         })
+
+        $('#contacto').on('show.bs.modal', function (event) {
+          console.log('Modal se está ejecutando');
+          $('#contactoBtn').removeClass('btn-outline-success');
+          $('#contactoBtn').addClass('btn-success');
+          $('#contactoBtn').prop('disabled', true);
+        });
+        $('#contacto').on('shown.bs.modal', function (event) {
+          console.log('Modal se ha mostrado');
+        });
+        $('#contacto').on('hide.bs.modal', function (event) {
+          console.log('Modal se ha oculta');
+        });
+        $('#contacto').on('hidden.bs.modal', function (event) {
+          console.log('Modal se ha ocultado');
+          $('#contactoBtn').prop('disabled', false);
+        });
       });
     </script>
   </body>
