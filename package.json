@@ -12,7 +12,7 @@
     "clean": "rimraf dist",
     "imagemin": "imagemin images/* --out-dir dist/images",
     "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin contacto.html -d dist --htmlmin -o dist/contacto.html && usemin precios.html -d dist --htmlmin -o dist/precios.html",
-    "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin " 
+    "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin "
   },
   "repository": {
     "type": "git",
@@ -27,10 +27,24 @@
   "devDependencies": {
     "copyfiles": "^2.4.1",
     "cssmin": "^0.4.3",
+    "grunt": "^1.6.1",
+    "grunt-cli": "^1.5.0",
+    "grunt-contrib-clean": "^2.0.1",
+    "grunt-contrib-concat": "^2.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^5.0.0",
+    "grunt-contrib-imagemin": "^4.0.0",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-filerev": "^2.3.1",
+    "grunt-usemin": "^3.1.1",
     "htmlmin": "^0.0.7",
+    "jit-grunt": "^0.10.0",
     "lite-server": "^2.6.1",
     "onchange": "^7.1.0",
     "rimraf": "^6.0.1",
+    "time-grunt": "^1.4.0",
     "uglify-js": "^3.19.3",
     "uglifyjs": "^2.4.11",
     "usemin-cli": "^0.6.0"
@@ -38,6 +52,7 @@
   "dependencies": {
     "bootstrap": "^5.3.6",
     "concurrently": "^9.2.0",
+    "grunt-browser-sync": "^2.2.0",
     "jquery": "^3.7.1",
     "open-iconic": "^1.1.1",
     "popper.js": "^1.16.1"
